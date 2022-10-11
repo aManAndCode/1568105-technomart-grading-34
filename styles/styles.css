@@ -1,0 +1,56 @@
+@font-face {
+   font-family: ; /* название шрифта (в двойных кавычках) */
+   font-style: ; /* normal / italic */
+   font-weight: ; /* 400 / 700 / 900 */
+   src: url() format(); /* путь / woff2 (всё в двойных кавычках)*/ 
+   font-display: swap;
+}
+
+:root {
+/* основная */
+/* --basic-extra-dark: #2D3440;
+--basic-dark: #565C66;
+--basic-neutral: #B9B9B9;
+--basic-light: #E7E7E7;
+--basic-extra-light: #FCFCFC;
+--basic-white: #FFFFFF; */
+
+/* дополнительная */
+/* --special-extra-bright: #FF2F64;
+--special-bright: #FF4A78;
+--special-neutral: #FF7799;
+--special-light: #FEAFC3;
+--special-extra-light: #FFCBD8;
+--special-blue: #69A9FF;
+--special-yellow: #FCC850; */
+
+/* статус */
+/* --status-error: #EA5454;
+--status-warning: #FD912E;
+--status-success: #00E484; */
+}
+
+.visually-hidden {
+   position: absolute;
+   width: 1px;
+   height: 1px;
+   margin: -1px;
+   border: 0;
+   padding: 0;
+   white-space: nowrap;
+   clip-path: inset(100%);
+   clip: rect(0 0 0 0);
+   overflow: hidden;
+}
+
+html {
+   height: 100%;
+}
+
+body {}
+
+/* сброс браузерных отступов */
+h1, h2, h3, h4, h5, h6, p, ul, dl, li {
+   margin: 0;
+   padding: 0;
+}
