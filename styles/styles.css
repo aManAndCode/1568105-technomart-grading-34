@@ -126,11 +126,11 @@ fieldset {
    border: none;
 }
 
-.button:hover {
+.button:hover,
+.button:focus {
+   outline: none;
    background-color: var(--basic-green-hover);
 }
-
-/* :focus {} */
 
 .button:active {
    background-color: var(--basic-green-click);
@@ -553,11 +553,11 @@ fieldset {
 .new {
    position: absolute;
    z-index: 1;
-   top: 0;
+   top: 0.5px;
    right: 0;
    width: 70px;
    height: 70px;
-   background-image: url('../images/icons/new.svg');
+   background: url('../images/icons/new.svg') top left no-repeat;
    display: none;
 }
 
@@ -1063,6 +1063,7 @@ fieldset {
    opacity: 0.3;
 }
 
+/* * catalog-product-container */
 .catalog-product-container {
    margin-top: 100px;
 }
@@ -1079,6 +1080,7 @@ fieldset {
    border: none;
    border-radius: 4px;
    padding: 9px 152px 9px 12px;
+   margin-bottom: 31px;
    box-shadow: inset 0 0 0 2px var(--basic-gray);
    background: url('../images/icons/arrow-down.svg') center right 13px no-repeat;
    appearance: none;
@@ -1095,7 +1097,267 @@ fieldset {
       inset 0 0 0 4px var(--basic-green);
 }
 
+/* * product */
 
+.catalog-product-list {
+   width: 870px;
+   display: flex;
+   flex-wrap: wrap;
+   gap: 30px 29px;
+   list-style-type: none;
+   margin-bottom: 30px;
+}
+
+.catalog-product-item {
+   position: relative;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   width: calc(270px - 54px);
+   border-radius: 2px;
+   padding: 27px 27px 25px;
+   box-shadow: 0 0 0 1px #EAEAEA;
+   text-align: center;
+   transition: ease-out 0.1s;
+}
+
+.catalog-product-item:hover {
+   box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.catalog-popup-item-pic {
+   order: 1;
+   margin-bottom: 14px;
+}
+
+.catalog-product-item-name {
+   order: 2;
+   font-weight: 700;
+   font-size: 20px;
+   line-height: 26px;
+   color: var(--basic-gray-click);
+   margin-bottom: 13px;
+}
+
+.old-price {
+   order: 3;
+   font-weight: 700;
+   font-size: 14px;
+   line-height: 18px;
+   letter-spacing: 2px;
+   color: #A9A9A9;
+   text-transform: uppercase;
+   margin-bottom: 10px;
+   display: none;
+}
+
+.on {
+   display: block;
+}
+
+.crossed {
+   text-decoration: line-through;
+}
+
+.catalog-product-button {
+   order: 4;
+   position: relative;
+   display: inline-block;
+   width: 138px;
+   height: 40px;
+   border: none;
+   padding: 0;
+   background-color: transparent;
+   margin-top: auto;
+}
+
+.product-button {
+   position: absolute;
+   top: 0;
+   left: -1px;
+   fill: var(--basic-red);
+}
+
+.product-button:hover {
+   fill: var(--basic-red-hover);
+}
+
+.catalog-product-button:focus {
+   outline: none;
+}
+.product-button:focus {
+   fill: var(--basic-red-hover);
+}
+
+.product-button:active {
+   fill: var(--basic-red-click);
+}
+
+.price {
+   position: absolute;
+   top: 11px;
+   left: 29px;
+   color: var(--basic-white);
+   font-family: 'PT Sans';
+   font-style: normal;
+   font-weight: 700;
+   font-size: 14px;
+   line-height: 18px;
+   letter-spacing: 2px;
+   text-transform: uppercase;
+   
+}
+/* * modal */
+.catalog-product-item-modal {
+   position: absolute;
+   content: '';
+   top: 0;
+   left: 0;
+   width: 270px;
+   height: calc(210px - 66px);
+   padding-top: 66px;
+   background-color: rgba(255, 255, 255, 0.85);
+   display: none;
+}
+
+.catalog-product-item:hover .catalog-product-item-modal {
+   display: block;
+}
+
+.catalog-modal-button {
+   font-family: 'PT Sans';
+   font-style: normal;
+   font-weight: 700;
+   font-size: 14px;
+   line-height: 18px;
+   letter-spacing: 2px;
+   text-transform: uppercase;
+   color: var(--basic-white);
+   background-color: var(--basic-green);
+   border-radius: 2px;
+   border: none;
+   margin-top: -2px;
+   margin-left: 11px;
+   padding: 12px 27px 10px 23px;
+}
+
+.catalog-modal-button:not(:last-of-type) {
+   margin-bottom: 13px;
+}
+
+.catalog-modal-button .bin {
+   width: 14px;
+   height: 14px;
+   margin-right: 3px;
+}
+
+.catalog-modal-button:hover,
+.catalog-modal-button:focus {
+   outline: none;
+   background-color: var(--basic-green-hover);
+}
+
+.catalog-modal-button:active {
+   background-color: var(--basic-green-click);
+}
+
+.catalog-modal-button-bookmark {
+   padding: 12px 16px 10px 18px;
+   color: #32425C;
+   background-color: var(--basic-white);
+   box-shadow: inset 0 0 0 2px var(--basic-green);
+}
+
+.catalog-modal-button-bookmark:hover,
+.catalog-modal-button-bookmark:focus {
+   box-shadow: inset 0 0 0 2px var(--basic-gray);
+   background-color: var(--basic-white);
+}
+
+.catalog-modal-button-bookmark:active {
+   box-shadow: inset 0 0 0 2px var(--basic-graylight);
+   color: var(--basic-graylight);
+}
+
+.catalog-product-item .new {
+   top: -1px;
+}
+
+.catalog-pagination {
+   display: flex;
+}
+
+.catalog-pagination-container {
+   display: flex;
+   margin: 0 auto;
+}
+
+.catalog-pagination-list {
+   display: flex;
+   list-style-type: none;
+   margin-right: 17px;
+}
+
+.catalog-pagination-item:not(:last-of-type) {
+   margin-right: 9px;
+}
+
+.catalog-pagination-item-link {
+   display: inline-block;
+   font-family: 'PT Sans';
+   font-style: normal;
+   font-weight: 700;
+   font-size: 16px;
+   line-height: 100%;
+   text-transform: uppercase;
+   text-decoration: none;
+   color: var(--basic-white);
+   background-color: var(--basic-gray);
+   padding: 15px 20px 14px;
+   border-radius: 2px;
+}
+
+.catalog-pagination-item-link:hover,
+.catalog-pagination-item-link:focus {
+   outline: none;
+   opacity: 0.8;
+}
+
+.catalog-pagination-item-link:active {
+   opacity: 0.5;
+}
+
+.catalog-pagination-item-link-current {
+   color: var(--basic-gray);
+   background-color: var(--basic-white);
+}
+
+.catalog-pagination-item-link-current:focus {
+   box-shadow: inset 0 0 0 2px var(--basic-gray);
+   opacity: 1;
+}
+
+.catalog-pagination-button {
+   padding: 12px 36px 15px 39px;
+   background-color: var(--basic-red);
+   border-radius: 2px;
+}
+
+.catalog-pagination-button:hover {
+   background-color: var(--basic-red-hover);
+}
+
+.catalog-pagination-button:focus {
+   outline: none;
+   color: var(--basic-red-hover);
+   box-shadow: inset 0 0 0 2px var(--basic-red-hover);
+   background-color: transparent;
+}
+
+.catalog-pagination-button:active {
+   color: var(--basic-white);
+   background-color: var(--basic-red-click);
+}
 
 
 /* *footer */
@@ -1103,5 +1365,4 @@ fieldset {
    width: 1400px;
    height: 276px;
    background-color: var(--basic-gray);
-
 }
