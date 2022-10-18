@@ -150,55 +150,231 @@
                <a class="promo-item-link" href="#" title="На страницу Техника">Для стройки</a>
             </li>
          </ul>
+
          <div class="slider-container">
-         <ul class="slider-list">
-            <li class="slider-item">
-               <h3 class="slider-item-title">Дрели</h3>
-               <p class="slider-item-text">Соседям на радость!</p>
-               <button class="slider-item-button prev" type="button">
-                  <span class="visually-hidden">
-                     Предыдущий слайд
-                  </span>
-               </button>
-               <button class="slider-item-button next" type="button">
-                  <span class="visually-hidden">
-                     Следующий слайд
-                  </span>
-               </button>
-               <a class="slider-item-link button" href="#" title="заполнить">Открыть каталог</a>
-            </li>
-            <li class="slider-item">
-               <h3 class="slider-item-title">Перфораторы</h3>
-               <p class="slider-item-text">Настроящие мужские игрушки</p>
-               <button class="slider-item-button prev" type="button">
-                  <span class="visually-hidden">
-                     Предыдущий слайд
-                  </span>
-               </button>
-               <button class="slider-item-button next" type="button">
-                  <span class="visually-hidden">
-                     Следующий слайд
-                  </span>
-               </button>
-               <a class="slider-item-link button" href="#" title="заполнить">Открыть каталог</a>
-            </li>
+            <ul class="slider-list">
+               <li class="slider-item">
+                  <h3 class="slider-item-title title">Дрели</h3>
+                  <p class="slider-item-text">Соседям на радость!</p>
+                  <button class="slider-item-button prev" type="button">
+                     <span class="visually-hidden">
+                        Предыдущий слайд
+                     </span>
+                  </button>
+                  <button class="slider-item-button next" type="button">
+                     <span class="visually-hidden">
+                        Следующий слайд
+                     </span>
+                  </button>
+                  <ul class="slider-pagination">
+                     <li class="slider-pagination-item">
+                        <button class="slider-pagination-button slider-pagination-button-current" type="button">
+                           <span class="visually-hidden">
+                              1 слайд
+                           </span>
+                        </button>
+                     </li>
+                     <li class="slider-pagination-item">
+                        <button class="slider-pagination-button" type="button">
+                           <span class="visually-hidden">
+                              2 слайд
+                           </span>
+                        </button>
+                     </li>
+                     <li class="slider-pagination-item">
+                        <button class="slider-pagination-button" type="button">
+                           <span class="visually-hidden">
+                              3 слайд
+                           </span>
+                        </button>
+                     </li>
+                  </ul>
+                  <a class="slider-item-link button" href="#" title="заполнить">Открыть каталог</a>
+               </li>
+               <li class="slider-item">
+                  <h3 class="slider-item-title title">Перфораторы</h3>
+                  <p class="slider-item-text">Настроящие мужские игрушки</p>
+                  <button class="slider-item-button prev" type="button">
+                     <span class="visually-hidden">
+                        Предыдущий слайд
+                     </span>
+                  </button>
+                  <button class="slider-item-button next" type="button">
+                     <span class="visually-hidden">
+                        Следующий слайд
+                     </span>
+                  </button>
+                  <ul class="slider-pagination">
+                     <li class="slider-pagination-item">
+                        <button class="slider-pagination-button" type="button">
+                           <span class="visually-hidden">
+                              1 слайд
+                           </span>
+                        </button>
+                     </li>
+                     <li class="slider-pagination-item">
+                        <button class="slider-pagination-button slider-pagination-button-current" type="button">
+                           <span class="visually-hidden">
+                              2 слайд
+                           </span>
+                        </button>
+                     </li>
+                     <li class="slider-pagination-item">
+                        <button class="slider-pagination-button" type="button">
+                           <span class="visually-hidden">
+                              3 слайд
+                           </span>
+                        </button>
+                     </li>
+                  </ul>
+                  <a class="slider-item-link button" href="#" title="заполнить">Открыть каталог</a>
+               </li>
+               
+            </ul>
             
-         </ul>
-         <ul class="promo-list-right">
-            <li class="promo-item">
-               <span class="new"></span>
-               <h3 class="promo-item-title">Скидки 50%</h3>
-               <a class="promo-item-link" href="#" title="На страницу Скидки">На 350 ТОВАРОВ</a>
-            </li>
-            <li class="promo-item">
-               <span class="new"></span>
-               <h3 class="promo-item-title">Доставка</h3>
-               <a class="promo-item-link" href="#" title="На страницу Доставка">Бесплатно</a>
-            </li>
-         </ul>
+            <ul class="promo-list-right">
+               <li class="promo-item">
+                  <span class="new"></span>
+                  <h3 class="promo-item-title">Скидки 50%</h3>
+                  <a class="promo-item-link" href="#" title="На страницу Скидки">На 350 ТОВАРОВ</a>
+               </li>
+               <li class="promo-item">
+                  <span class="new"></span>
+                  <h3 class="promo-item-title">Доставка</h3>
+                  <a class="promo-item-link" href="#" title="На страницу Доставка">Бесплатно</a>
+               </li>
+            </ul>
          </div>
       </section>
+      
+      <section class="catalog">
+         <div class="catalog-form-container">
+            <h2 class="catalog-title title">Перфораторы</h2>      
+            <form class="catalog-form" action="https://echo.htmlacademy.ru/" method="post">
+               <fieldset class="catalog-form-price">
+                  <legend class="catalog-form-legend catalog-form-price-title">Цена</legend>
+                  <div class="range">
+                     <div class="range-scale">
+                        <div class="range-bar" style="left: 0; width: 138.5px">
+                           <button class="range-toggle toggle-min" type="button">
+                              <span class="visually-hidden">Изменить минимальную цену</span>
+                           </button>
+                           <button class="range-toggle toggle-max" type="button">
+                              <span class="visually-hidden">Изменить максимальную цену</span>
+                           </button>
+                        </div>
+                     </div>
+                  </div>
+                  <span class="range-wrapper-input">
+                     <label class="product-filter-label">
+                        <input class="range-input" type="number" value="0" name="min-price" style="width: 95px"><!-- ₽ -->
+                     </label>
+                     –
+                     <label class="product-filter-label">
+                        <input class="range-input" type="number" value="30000" name="max-price" style="width: 95px"><!-- ₽ -->
+                     </label>
+                  </span>
+               </fieldset> 
+
+               <fieldset class="catalog-form-maker">
+                  <legend class="catalog-form-legend catalog-form-maker-title">Производители</legend>
+                  <ul class="catalog-form-maker-list">
+                     <li class="catalog-form-maker-item">
+                        <label class="control">
+                           <input class="control-input visually-hidden" type="checkbox" name="Bosch" checked>
+                           <span class="control-mark">
+                              <svg class="v-check" width="10" height="8" viewBox="0 0 10 8" aria-hidden="true" focusable="false" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                 <path fill-rule="evenodd" clip-rule="evenodd" d="M3.70711 4.58574L8 0.292847L9.41421 1.70706L3.70711 7.41417L0 3.70706L1.41421 2.29285L3.70711 4.58574Z"/>
+                              </svg>
+                           </span>
+                           <span class="control-label">BOSCH</span>
+                        </label>
+                     </li>
+                     <li class="catalog-form-maker-item">
+                        <label class="control">
+                           <input class="control-input visually-hidden" type="checkbox" name="Interskol">
+                           <span class="control-mark">
+                              <svg class="v-check" width="10" height="8" viewBox="0 0 10 8" aria-hidden="true" focusable="false" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                 <path fill-rule="evenodd" clip-rule="evenodd" d="M3.70711 4.58574L8 0.292847L9.41421 1.70706L3.70711 7.41417L0 3.70706L1.41421 2.29285L3.70711 4.58574Z"/>
+                              </svg>
+                           </span>
+                           <span class="control-label">ИНТЕРСКОЛ</span>
+                        </label>
+                     </li>
+                     <li class="catalog-form-maker-item">
+                        <label class="control">
+                           <input class="control-input visually-hidden" type="checkbox" name="MAKIta" checked>
+                           <span class="control-mark">
+                              <svg class="v-check" width="10" height="8" viewBox="0 0 10 8" aria-hidden="true" focusable="false" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                 <path fill-rule="evenodd" clip-rule="evenodd" d="M3.70711 4.58574L8 0.292847L9.41421 1.70706L3.70711 7.41417L0 3.70706L1.41421 2.29285L3.70711 4.58574Z"/>
+                              </svg>
+                           </span>
+                           <span class="control-label">MAKIta</span>
+                        </label>
+                     </li>
+                     <li class="catalog-form-maker-item">
+                        <label class="control">
+                           <input class="control-input visually-hidden" type="checkbox" name="Dewalt">
+                           <span class="control-mark">
+                              <svg class="v-check" width="10" height="8" viewBox="0 0 10 8" aria-hidden="true" focusable="false" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                 <path fill-rule="evenodd" clip-rule="evenodd" d="M3.70711 4.58574L8 0.292847L9.41421 1.70706L3.70711 7.41417L0 3.70706L1.41421 2.29285L3.70711 4.58574Z"/>
+                              </svg>
+                           </span>
+                           <span class="control-label">Dewalt</span>
+                        </label>
+                     </li>
+                     <li class="catalog-form-maker-item">
+                        <label class="control">
+                           <input class="control-input visually-hidden" type="checkbox" name="Hitachi">
+                           <span class="control-mark">
+                              <svg class="v-check" width="10" height="8" viewBox="0 0 10 8" aria-hidden="true" focusable="false" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                 <path fill-rule="evenodd" clip-rule="evenodd" d="M3.70711 4.58574L8 0.292847L9.41421 1.70706L3.70711 7.41417L0 3.70706L1.41421 2.29285L3.70711 4.58574Z"/>
+                              </svg>
+                           </span>
+                           <span class="control-label">Hitachi</span>
+                        </label>
+                     </li>
+                  </ul>
+               </fieldset>
+
+               <fieldset class="catalog-form-supply">
+                  <legend class="catalog-form-legend catalog-form-supply-title">Питание</legend>
+                  <ul class="catalog-form-supply-list">
+                     <li class="catalog-form-supply-item">
+                        <label class="control">
+                           <input class="control-input visually-hidden" type="radio" name="supply" checked>
+                           <span class="control-mark"></span>
+                           <span class="control-label">Аккумуляторные</span>
+                        </label>
+                     </li>
+                     <li class="catalog-form-supply-item">
+                        <label class="control">
+                           <input class="control-input visually-hidden" type="radio" name="supply">
+                           <span class="control-mark"></span>
+                           <span class="control-label">Сетевые</span>
+                        </label>
+                     </li>
+                  </ul>
+                     
+                  
+               </fieldset>
+
+               <button class="catalog-form-button button" type="submit">Показать</button>
+            </form>
+         </div>
+
+         <div class="catalog-product-container">
+            <select class="catalog-select">
+               <option value="sort">Сортировать</option>
+               <option value="dontsort">Не сортировать</option>
+            </select>
+         
+         </div>
+      </section>
+      
    </main>
+
+
    <footer class="page-footer"></footer>
 
 </body>
