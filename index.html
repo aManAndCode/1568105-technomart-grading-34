@@ -9,7 +9,6 @@
    <link rel="icon" type="image/icon" href="favicon.ico">
    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon.png">
 </head>
-
 <body>   
    <header class="page-header">
       <div class="page-header-top">
@@ -53,7 +52,34 @@
                      </svg>
                      Войти
                   </a>
+                  <div class="login-popup-enter">
+                     <button class="login-popup-close-button" type="button">
+                        <svg class="close" width="22" height="22" viewBox="0 0 22 22" aria-hidden="true" focusable="false" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                           <path fill-rule="evenodd" clip-rule="evenodd" d="M11 22C4.92487 22 0 17.0751 0 11C0 4.92487 4.92487 0 11 0C17.0751 0 22 4.92487 22 11C22 17.0751 17.0751 22 11 22ZM11 20C15.9706 20 20 15.9706 20 11C20 6.02944 15.9706 2 11 2C6.02944 2 2 6.02944 2 11C2 15.9706 6.02944 20 11 20ZM7.70711 15.7071L11 12.4142L14.2929 15.7071L15.7071 14.2929L12.4142 11L15.7071 7.70711L14.2929 6.29289L11 9.58579L7.70711 6.29289L6.29289 7.70711L9.58579 11L6.29289 14.2929L7.70711 15.7071Z"/>
+                        </svg>
+                     </button>
+                     <h2 class="hello-user">
+                        Здравствуйте,<br>Равшан Джамшутович
+                     </h2>
+
+                     <ul class="login-popup-list">
+                        <li class="login-popup-item">
+                           <a class="popup-link my-orders" href="#" title="На страницу Заказы пользователя">
+                              мои заказы
+                           </a>
+                        </li>
+                        <li class="login-popup-item">
+                           <a class="popup-link user-profile" href="#" title="В личный кабинет">
+                              личный кабинет
+                           </a>
+                        </li>
+                     </ul>
+                     <a class="login-popup-link button" href="#" title="Выйти из личного кабинета">
+                        выйти
+                     </a>
+                  </div>
                </li>
+
                <li class="page-header-user-item">
                   <a class="page-header-user-link user-name" href="#" title="Личный кабинет пользователя">
                      <svg class="user-icon" width="20" height="20" viewBox="0 0 20 20" aria-hidden="true" focusable="false" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
@@ -355,10 +381,7 @@
                         </label>
                      </li>
                   </ul>
-                     
-                  
                </fieldset>
-
                <button class="catalog-form-button button" type="submit">Показать</button>
             </form>
          </div>
@@ -368,7 +391,6 @@
                <option value="sort">Сортировать</option>
                <option value="dontsort">Не сортировать</option>
             </select>
-            
             <ul class="catalog-product-list">
                <li class="catalog-product-item">
                   <h3 class="catalog-product-item-name">Перфоратор BOSCH<br>BFG 3000</h3>
@@ -736,10 +758,7 @@
             <img class="about-pic" src="/images/map.jpg" width="500" height="347" alt="На картинке показано где находится магазин «Техномарт».">
          </div>
       </section>
-      
    </main>
-
-
    <footer class="page-footer">
       <div class="page-footer-main">
          <div class="page-footer-logo-address-socials">
@@ -800,7 +819,6 @@
             </form>
          </div>
       </div>
-
       <div class="page-footer-bottom">
          <div class="page-footer-bottom-container">
             <p class="copyright">© 2010–2019 Компания «Техномарт» Все права защищены</p>
@@ -813,6 +831,5 @@
          </div>
       </div>
    </footer>
-
 </body>
 </html>

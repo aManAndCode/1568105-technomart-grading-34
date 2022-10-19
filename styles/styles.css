@@ -73,10 +73,6 @@
    overflow: hidden;
 }
 
-html {
-   /* height: 100%; */
-}
-
 body {
    width: 1400px;
    margin: 0 auto;
@@ -92,10 +88,6 @@ body {
    color: var(--basic-dark);
    background-color: var(--basic-white);
    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-}
-
-.main-index {
-   flex-grow: 1;
 }
 
 /* сброс браузерных отступов */
@@ -306,7 +298,6 @@ fieldset {
    display: block;
 }
 
-
 /* ?page-header-user-list */
 
 .page-header-user-list {
@@ -319,7 +310,6 @@ fieldset {
 
 .page-header-user-item {
    position: relative;
-   /* width: 150px; */
 }
 
 .page-header-user-link {
@@ -343,12 +333,12 @@ fieldset {
 }
 
 .login {
+   position: relative;
    font-weight: 700;
    font-size: 14px;
    line-height: 18px;
    letter-spacing: 2px;
    text-transform: uppercase;
-   /* display: none; */
 }
 
 .user-name {
@@ -386,10 +376,109 @@ fieldset {
    opacity: 0.4;
 }
 
+.login-popup-enter {
+   position: absolute;
+   z-index: 1;
+   content: '';
+   top: 1px;
+   right: 0;
+   width: calc(360px - 62px);
+   height: calc(273px - 55px);
+   padding: 23px 31px 33px;
+   border-radius: 2px;
+   background-color: var(--basic-white);
+   box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.15);
+   display: none;
+}
+
+.login-popup-close-button {
+   position: absolute;
+   content: '';
+   top: 15px;
+   right: 14px;
+   margin: 0;
+   padding: 0;
+   border: none;
+   background-color: transparent;
+   cursor: pointer;
+   
+}
+
+.login-popup-close-button .close {
+   fill: #C4C4C4;
+}
+
+.login-popup-close-button .close:hover {
+   fill: var(--basic-gray)
+}
+
+.login-popup-close-button:focus {
+   outline: none;
+}
+
+.login-popup-close-button .close:active {
+   fill: #C4C4C4;
+}
+
+.hello-user {
+   font-family: 'PT Sans', sans-serif;
+   font-style: normal;
+   font-weight: 700;
+   font-size: 24px;
+   line-height: 30px;
+   text-transform: uppercase;
+   margin-bottom: 31px;
+   
+}
+
+.login-popup-list {
+   list-style-type: none;
+   margin-left: 4px;
+   margin-bottom: 22px;
+}
+
+.login-popup-item:not(:last-of-type) {
+   margin-bottom: 16px;
+}
+
+.popup-link {
+   font-family: 'PT Sans';
+   font-style: normal;
+   font-weight: 700;
+   font-size: 14px;
+   line-height: 18px;
+   letter-spacing: 2px;
+   text-transform: uppercase;
+   text-decoration: none;
+   color: var(--basic-gray);
+}
+
+.login-popup-link {
+   padding: 11px 44px 12px 45px;
+   color: var(--basic-gray-hover);
+   background-color: var(--basic-white);
+   box-shadow: inset 0 0 0 2px var(--basic-green);
+}
+
+.login-popup-link:hover {
+   box-shadow: inset 0 0 0 2px var(--basic-gray);
+   background-color: transparent;
+}
+
+.login-popup-link:focus {
+   box-shadow: inset 0 0 0 2px var(--basic-gray);
+   outline: none;
+   background-color: transparent;
+}
+
+.login-popup-link:active {
+   box-shadow: inset 0 0 0 2px var(--basic-graylight);
+   color: var(--basic-graylight);
+   background-color: transparent;
+}
 
 /* ? page-header-bottom */
 .page-header-bottom {
-   /* height: 69px; */
    background-color: var(--basic-gray);
    display: flex;
    align-items: center;
@@ -406,7 +495,6 @@ fieldset {
    height: inherit;
    display: flex;
    flex-wrap: wrap;
-   /* align-items: center; */
    list-style-type: none;
 }
 
@@ -418,15 +506,16 @@ fieldset {
    padding: 20px 26px 24px;
 }
 
-.navigation-item-link:hover {
+.navigation-item-link:hover,
+.navigation-item-link:focus {
+   outline: none;
    background-color: var(--basic-gray-hover);
    color: var(--basic-graylight);
 }
 
-/* !:focus {} */
-
 .navigation-item-link:active {
-   font-weight: 700;
+   /* font-weight: 700; */
+   opacity: 0.5;
 }
 
 .navigation-item:first-of-type .navigation-item-link {
@@ -607,7 +696,6 @@ fieldset {
 .promo-item:nth-of-type(1) .promo-item-link {
    padding: 12px 17px 11px 33px;
    bottom: 32px;
-   /* letter-spacing: 1.9px; */
 }
 
 .promo-item:nth-of-type(2) {
@@ -627,9 +715,9 @@ fieldset {
 }
 
 .promo-item:nth-of-type(3) .promo-item-link {
+   padding: 12px 35px 12px 33px;
    padding-bottom: 10px;
    bottom: 32px;
-   /* letter-spacing: 1.9px; */
 }
 
 .promo-list-right .promo-item:nth-of-type(1) {
@@ -1683,16 +1771,16 @@ fieldset {
 }
 
 .page-footer-form-button:hover {
-   background-color: var(--basic-green-click);
+   background-color: var(--basic-green-hover);
 }
 
 .page-footer-form-button:focus {
    outline: none;
-   background-color: var(--basic-green-hover);
+   background-color: var(--special-blue);
 }
 
 .page-footer-form-button:active {
-   background-color: var(--basic-gray);
+   background-color: var(--basic-green-click);
 }
 
 .page-footer-bottom {
